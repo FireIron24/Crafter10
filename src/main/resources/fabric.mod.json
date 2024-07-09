@@ -6,8 +6,9 @@
   "name": "Crafter10",
   "description": "Crafter reads signal strength 10 if all Stackable items inside are greater than 1",
   "authors": ["FireIron24"],
-  "contact": {"homepage": "https://modrinth.com/project/crafter10"},
-
+  "contact": {"homepage": "https://modrinth.com/project/crafter10",
+    "issues": "https://github.com/FireIron24/Crafter10/issues"
+  },
   "license": "MIT",
   "icon": "assets/crafter10/icon.png",
 
