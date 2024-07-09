@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "crafter10",
+  "version": "${version}",
+
+  "name": "Crafter10",
+  "description": "Crafter reads signal strength 10 if all Stackable items inside are greater than 1",
+  "authors": ["FireIron24"],
+  "contact": {"homepage": "https://modrinth.com/project/crafter10"},
+
+  "license": "MIT",
+  "icon": "assets/crafter10/icon.png",
+
+  "entrypoints": {},
+
+  "mixins": [
+    "crafter10.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "*"
+  }
+}

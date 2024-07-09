@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.fireIron24.crafter10.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CrafterBlockMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
