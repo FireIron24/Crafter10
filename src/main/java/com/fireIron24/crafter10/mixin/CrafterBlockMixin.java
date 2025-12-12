@@ -1,6 +1,7 @@
 package com.fireIron24.crafter10.mixin;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.CrafterBlock;
@@ -14,7 +15,6 @@ import org.spongepowered.asm.mixin.Unique;
 
 @Mixin(CrafterBlock.class)
 public class CrafterBlockMixin {
-
     /**
      * Overwrite the getAnalogOutputSignal method to change its behavior.
      * @author FireIro24
@@ -22,10 +22,11 @@ public class CrafterBlockMixin {
      * @param blockState The block state.
      * @param level The level.
      * @param blockPos The block position.
+     * @param direction The direction
      * @return The new analog output signal.
      */
     @Overwrite
-    public int  getAnalogOutputSignal(BlockState blockState, Level level, BlockPos blockPos) {
+    public int  getAnalogOutputSignal(BlockState blockState, Level level, BlockPos blockPos, Direction direction) {
         BlockEntity blockEntity = level.getBlockEntity(blockPos);
         if (blockEntity instanceof CrafterBlockEntity) {
             return (getRedstoneSignal((CrafterBlockEntity) blockEntity));
